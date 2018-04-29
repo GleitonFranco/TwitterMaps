@@ -1,0 +1,12 @@
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+.mark-0 {
+    color: crimson;
+    background-color: seagreen;
+}
+.user {
+    color: orange;
+}
