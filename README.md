@@ -29,6 +29,8 @@ Como tais requerem a chave de autenticação, deve-se fornecê-las no código. S
   * access_token_key
   * access_token_secret
 
+* Conteúdo mockado: torna possível ver o funcionamento do aplicativo por meio de um conteúdo exemplo. O código comentado **em src/Login.js**, nas linhas 71-73, pode ser descomentado para esse fim. ele fornecerá um JSON de resposta equivalente em estrutura à API do Twitter, conforme na sua própria documentação.
+
 No Linux tem acontecido problemas com o node com React, bloqueando o servidor. Se isso acontecer e em caso de emergência pode-se executar o comando:<br>
 `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p`
 

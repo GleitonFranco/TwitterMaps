@@ -68,9 +68,9 @@ const Login = ({ dispatch, googleKey }) => {
 
                     // SE NÃO HOUVER O TOKEN PARA A API DO TWITTER, PODE-SE DESCOMENTAR O
                     // CÓDIGO ABAIXO PARA USAR UM PERFIL MOCKADO:
-                    dispatch(setUserName(nome));
-                    setUserLocationWithGeocodification('Fortaleza');
-                    friendsSource.users.forEach(addFriendWithGeocodification);
+                    // dispatch(setUserName(nome));
+                    // setUserLocationWithGeocodification('Fortaleza');
+                    // friendsSource.users.forEach(addFriendWithGeocodification);
 
                 } } >Login</Button>
                 </Col>
