@@ -3,6 +3,35 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
+## TwitterMaps
+O objetivo do aplicativo é acessar o perfil do usuário e fornecer uma interface gráfica mapeando todos os que estão seguindo o usuário (friends) e localizá-los no mapa.
+
+### Funcionamento
+Inicia-se via npm:<br>
+`$ npm start`
+
+Poderá ser visualizado no navegador em localhost:3000.
+Alguns navegadores podem estar configurados para bloquear requisições cross-domain, assim pode ser necessário iniciar o navegador desabilitando esse serviço. Exemplo:<br>
+`$ chromium --disable-web-security --user-data-dir`
+
+###Configurações Iniciais
+Os principais serviços que o aplicativo usa são:
+* Google APIs Maps
+* Twiteer API
+Como tais requerem a chave de autenticação, deve-se fornecê-las no código. Segue abaixo os locais onde deverão ser fornecidos.
+
+* /src/ducks/types.js: constante:
+  * GOOGLE_MAPS_KEY
+
+* /src/Login.js: linhas 49-52, os parâmetros para a API do Twitter:
+  * consumer_key
+  * consumer_secret
+  * access_token_key
+  * access_token_secret
+
+No Linux tem acontecido problemas com o node com React, bloqueando o servidor. Se isso acontecer e em caso de emergência pode-se executar o comando:<br>
+`echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p`
+
 ## Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
